@@ -1,0 +1,63 @@
+.box {
+	width: 473px;
+	height: 383px;
+	border: 1px solid pink;
+	margin: 50px auto;
+	/* overflow: hidden; */
+	background: #fcface;
+	position: relative;
+}
+.box #wrapper {
+	position: absolute;
+	top: 50%;
+	margin-top: -106px;
+	/* height: 100%; */
+}
+
+.box #wrapper .cell {
+	display: block;
+	float: left;
+	margin-left: 37px;
+	width: 133px;
+	height: 100%;
+	position: relative;
+}
+.box #wrapper .cell img {
+	width: 100%;
+}
+.box #wrapper .cell:first-child {
+	margin-left: 0;
+}
+.box #wrapper .cell.active img {
+	position: absolute;
+	/* transform: scale(2.4); */
+	width: 238px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.btn {
+	position: absolute;
+	top: 50%;
+	margin-top: -29px;
+	right: 0;
+	left: 0;
+	z-index: 99999999;
+	padding: 0 10px;
+}
+.btn span {
+	display: inline-block;
+	width: 29px;
+	height: 58px;
+	cursor: pointer;
+}
+.btn #leftBtn {
+	background: url('../images/left.png') left;
+}
+.btn #rightBtn {
+	float: right;
+	background: url('../images/right.png');
+}
